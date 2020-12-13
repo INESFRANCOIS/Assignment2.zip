@@ -13,8 +13,8 @@ The website contains three tabs: Home with the order of mission, UML and the Pyt
 There are three figures the UML, movement of bacteria according given probalities. 
 
 ### Run the program  
-This Python code was written on the Spyder IDE with  Python version 3.8. In your command prompt, you can: (1) read the script of model: more Trackingbacteria.py,
-(2) read the  script of the agent class: more bacteriaclass.py, (3) run the program: python Trackingbacteria.py and (4) test the program: python -m doctest -v bacteriaclass.py
+This Python code was written on the Spyder IDE with  Python version 3.8. In your command prompt, you can: (1) read the script of model: more version.py,
+(2) read the  script of the agent class: more bacteriaclass.py, (3) run the program: python version.py and (4) test the program: python -m doctest -v bacteriaclass.py
 
 ### Sources 
 
@@ -28,6 +28,7 @@ In order to check my HTML and CSS codes, I used this tool: https://validator.w3.
 
 Not used in the project:
 Pandas librairy https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
+
 Seaborn librairy https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.
 
 
