@@ -27,6 +27,7 @@ HTML and CSS languages w3schools.com
 In order to check my HTML and CSS codes, I used this tool: https://validator.w3.org/
 
 Not used in the project:
+
 Pandas librairy https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
 
 Seaborn librairy https://seaborn.pydata.org/#:~:text=Seaborn%20is%20a%20Python%20data,attractive%20and%20informative%20statistical%20graphics.
