@@ -3,7 +3,7 @@
 ### Content 
 
 In this website, you will find my independant project "Tracking biological weapon fallout" performed from october to december 2020 
-for the second assessment of the module Programinig for Social Science during my first year in integrated MSc and PhD Data Analytics and Society 
+for the second assessment of the module Programinig for Social Science during my first year in integrated MSc and PhD Data Analytics and Society.
 
 Project: 
 It is an awful day in Data city,  someone lets off a biological weapon on top of a building with bacteria which are deadly on contact. The aim of this
