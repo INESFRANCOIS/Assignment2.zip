@@ -5,6 +5,7 @@ Agent class
 @author: Inès
 @version : 1.2.3
 license: GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
+
 """
 
 # Importation of the random module
@@ -15,6 +16,19 @@ from doctest import testmod
 random.seed
 
 class Agent :
+
+"""
+This class simulates movements of bacteria according the current wind and turbulances.
+
+The constructors has two arguments: 
+environment (a list of list representing the city in which agents are located) 
+bacteria (a list of bacteria in the environment) 
+
+Bacteria have four characteristics : name, x-coordinate, y-coordinate and z-coordinate.
+
+There are two functions to simulate movements of bacteria: move and turbulance. 
+
+"""
     
     # Constructor 
 
@@ -41,7 +55,6 @@ class Agent :
         Returns
         -------
         None
-        
         
         """
         self.name = name
@@ -134,7 +147,7 @@ class Agent :
        
         
         """  
-        if self.z > 0: # Ensure that when the bacteria is on the ground, they won't be blown by the wind   
+        if self.z > 0: # Ensure that when the bacteria are on the ground, they won't be blown by the wind   
             if self.z >= 75: # Turbulance
                 r= random.random()
                 if r <= 0.2:
@@ -151,7 +164,7 @@ class Agent :
             self.z = self.z     
                 
 
-    def __str__(self):
+    def __str__(self): 
         return f'{self.name},{self.x}, {self.y}, {self.z}'
     
     if __name__ =='__main__':
