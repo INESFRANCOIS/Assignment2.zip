@@ -30,8 +30,8 @@
 			<img src = "movement.PNG"class="center" ></img>
 		</p>
 		<p> 
-			&nbsp;&nbsp;&nbsp;&nbsp; Functions to initialize the attributes of Agent class, to simulate the movement of bacteria according the current wind and turbulance were documented
-			(see descriptions with parameters and return included in the code) and the two last functions were tested (twenty-seven tests were performed).
+			&nbsp;&nbsp;&nbsp;&nbsp; The Agent class, the constructor and functions to simulate the movement of bacteria according the current wind and turbulance were documented
+			(see descriptions with parameters and return included in the code). Moreover, functions were tested (twenty-seven tests were performed).
 		</p>
 		<h1> Script to run the program </h1>
 		<h2> Inputs </h2>
@@ -43,24 +43,24 @@
 		</p>
 		<p>
 			&nbsp;&nbsp;&nbsp;&nbsp; The bombing point and the virtual environment are provided by the csv file  <a href = "windraster.csv"><span>windraster.csv</span></a>.
-			This file contains three hundred rows and three hundred columns with O and the value 255 which represents the bombing point in the city.
-			In this project, any building don't appear in the virtual environment because they are considered not to influence the flow of this bacteria.
-			A number of bacteria and a number of iterations are defined five thousand bacteria and two hundred iterations.
+			This file contains three hundred rows and three hundred columns with 0 and the value 255 which represents the bombing point in the city.
+			In this project, any building does not appear in the virtual environment because they are considered not to influence the flow of this bacteria.
+			A number of bacteria and a number of iterations are defined: five thousand bacteria and two hundred iterations.
 		</p>	
 		<h2> Outputs </h2> 
 		<p> 
-			&nbsp;&nbsp;&nbsp;&nbsp; In your console, first you can see the bombing point : y = 151 X = 51 value = 255. y and x are respectively the y-coordinate and the x-coordinate. 
+			&nbsp;&nbsp;&nbsp;&nbsp; In your console, first you can see the bombing point : y = 151 X = 51 value = 255 (y and x are respectively the y-coordinate and the x-coordinate). 
 			Printing the value allows us checking that we have the right coordinates of bombing point. 
 		</p>
 		<p> 
 			&nbsp;&nbsp;&nbsp;&nbsp; During the writing of this code, the program was tested with a smaller number of bacteria and a smaller number of iterations. For example for 5 bacteria and 
 			85 iterations, we can see the name of bacteria (a number here between 0 and 4), these initial coordinates: x,y and z (As all bacteria are in the biological 
-			weapon, they have all the same initial coordinate y = 151, x = 51 and z= 75) and the coordinates for each iteration. In order to avoid that the console does not work with
+			weapon, they have all the same initial coordinate y = 151, x = 51 and z= 75) and the coordinates after each iteration. In order to avoid that the console does not work with
 			a high number of bacteria and iteraions, this part of code "print(bacteria[i])" after the creation of agents for initial coordinates and after calling the functions move and turbulance
 			for the final coordinates of agents is left in comment (#).
 		</p>
 		<p>	
-			&nbsp;&nbsp;&nbsp;&nbsp; Finally, you can see a density map intituled "Tracking biological weapon fallout" (See Figure 2 below).
+			&nbsp;&nbsp;&nbsp;&nbsp; Finally, you can see a density map with the title "Tracking biological weapon fallout" which will be save as a png file (See Figure 2 below).
 		</p>
 		<p>
 			<img src = "Densitymap.PNG" class="center"></img>
