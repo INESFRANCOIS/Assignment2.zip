@@ -76,17 +76,15 @@ for i in range(len(bacteria)):
     x_coordinate.append(bacteria[i].x)
     y_coordinate.append(bacteria[i].y)
     z_coordinate.append(bacteria[i].z)
-    
-    
 df_initial = pd.DataFrame({'x': x_coordinate, 'y': y_coordinate, 'z': z_coordinate})
+print (df_initial)
    
 # Simulation of movements of bacteria according current wind and turbulance
 for j in range(num_of_iterations):
     for i in range(num_of_bacteria):
         bacteria[i].move(1)
         bacteria[i].turbulance(1)        
-        
-        
+       
 x_coordinate = []
 y_coordinate = []
 z_coordinate = []
@@ -95,6 +93,7 @@ for i in range(len(bacteria)):
     y_coordinate.append(bacteria[i].y)
     z_coordinate.append(bacteria[i].z)
 df_final = pd.DataFrame({'x': x_coordinate, 'y': y_coordinate, 'z': z_coordinate})
+print(df_final)
 
                   
 # Plot the density map
