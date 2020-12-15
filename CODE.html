@@ -19,12 +19,12 @@
 			there are the constructor and two methods to simulate the movement of bacteria: bacteria can move in four possible directions : north, south,
 			east and west because of the current wind and can rise or fall according the presence or not of turbulance. (See figure 1 below) </p>
 		<p>  
-			&nbsp;&nbsp;&nbsp;&nbsp; In this project, bacteria will be blown by the wind  according this given probabilities :: (1) a bacterium will be blown west with 5% chance, (2) a bacterium will be blown east with 75% chance,
-		   	(3)a bacterium will be blown north or south with 10% chance.
+			&nbsp;&nbsp;&nbsp;&nbsp; In this project, bacteria will be blown by the wind  according this given probabilities : (1) a bacterium will be blown west with 5% chance, (2) a bacterium will be blown east with 75% chance,
+		    (3) a bacterium will be blown north or south with 10% chance.
 		</p>
 		<p> 
 			&nbsp;&nbsp;&nbsp;&nbsp; Concerning the presence or not of turbulance, when the bacteria are below 75 meters, there is no turbulance so the bacteria will drop by a meter a second.
-			when the bacteria are at the height of the building (75 meters) and above, there is a turbulance and given probabilities are the following :
+			When the bacteria are at the height of the building (75 meters) and above, there is a turbulance and given probabilities are the following :
 			(1) they will rise by a meter with 20% chance, (2) they will stay at the same level with 10% chance, (3) they will fall with 70% chance.
 		<p>
 			<img src = "movement.PNG"class="center" ></img>
@@ -36,7 +36,7 @@
 		<h1> Script to run the program </h1>
 		<h2> Inputs </h2>
 		<p>
-			&nbsp;&nbsp;&nbsp;&nbsp; In our <a href = "version.py"><span> script to run the model </span></a>, there is  in this order the code to (0) import librairies and modules requested for the program, 
+			&nbsp;&nbsp;&nbsp;&nbsp; In our <a href = "version.py"><span>script to run the model</span></a>, there is  in this order the code to (0) import librairies and modules requested for the program, 
 			(1) find the bombing point, (2) initialize the environment, (3) initialize two 2D lists zero and density in order to plot a density map later, (4) initialyse numbers of bacteia and iterations, 
 			(5) create a figure with a title, (6) create the bacteria (an empty list in which we added the attributes of Agent class), (7) simulate the movement of bacteria calling functions move and turbulance
 			and (8) plot the density map. 
@@ -58,6 +58,10 @@
 			weapon, they have all the same initial coordinate y = 151, x = 51 and z= 75) and the coordinates after each iteration. In order to avoid that the console does not work with
 			a high number of bacteria and iteraions, this part of code "print(bacteria[i])" after the creation of agents for initial coordinates and after calling the functions move and turbulance
 			for the final coordinates of agents is left in comment (#).
+		</p>
+		<p>	
+			&nbsp;&nbsp;&nbsp;&nbsp; A modification of the script to run the model <a href = "versiondf.py"><span>versiondf.py</span></a> to add a dataframe for the initial position (df_initial) and for the final postion of bacteria (df_final)
+			was  performed for 5 bacteria and 85 iterations. 
 		</p>
 		<p>	
 			&nbsp;&nbsp;&nbsp;&nbsp; Finally, you can see a density map with the title "Tracking biological weapon fallout" which will be save as a png file (See Figure 2 below).
